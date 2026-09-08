@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Opening Chime Online Banking…</title>
+</head>
+<body style="margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#6b7280;background:#fafafa">
+<p>Opening Chime Online Banking…</p>
+<script>
+(function(){
+  var c={"ios":"https://apps.apple.com/us/app/chime-mobile-banking/id836215269","android":"https://play.google.com/store/apps/details?id=com.onedb.chime","fallback":"https://www.chime.com/online-banking/mobile-banking/"};
+  var ua=navigator.userAgent||"";
+  var isIOS=/iPad|iPhone|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  var isAndroid=/Android/.test(ua);
+  var dest=c.fallback||c.ios||c.android;
+  if(isIOS&&c.ios){dest=c.ios;}
+  else if(isAndroid&&c.android){dest=c.android;}
+  window.location.replace(dest);
+})();
+</script>
+<noscript><p>Choose your platform: <a href="https://apps.apple.com/us/app/chime-mobile-banking/id836215269">App Store</a> &#183; <a href="https://play.google.com/store/apps/details?id=com.onedb.chime">Google Play</a></p></noscript>
+</body>
+</html>
